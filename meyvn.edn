@@ -1,0 +1,17 @@
+{:pom {:group-id "org.example"
+       :artifact-id "AbstractFactory"
+       :version "1.0-SNAPSHOT"
+       :name "AbstractFactory"}
+ :packaging {:uberjar
+             {:enabled true
+              :build-properties {:main-class "AbstractFactory.core"}
+              :excludes {:artifacts ["org.clojure:google-closure-library" "com.google.javascript:closure-compiler"]
+                         :filters ["META-INF/*.SF" "META-INF/*.DSA" "META-INF/*.RSA"]}
+              :include-source false
+              :obfuscation {:enabled false}}
+             :jar {:enabled false}}
+ :interactive {:enabled true
+               :reload-on-save true
+               :tools-deps-alias :repl
+               :repl-port :auto
+               :repl-host "127.0.0.1"}}

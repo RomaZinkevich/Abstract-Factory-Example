@@ -1,0 +1,2 @@
+(ns AbstractFactory.core-test)
+
