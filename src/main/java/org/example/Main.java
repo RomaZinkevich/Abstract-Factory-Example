@@ -2,10 +2,12 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Application app = new Application("Windows");
-        app.paint(); // Renders Windows UI
+        GUIFactory factory = new WinFactory();
+        Application app = new Application(factory);
+        app.paint();
 
-        app = new Application("Mac");
-        app.paint(); // Renders Mac UI
+        factory = new MacFactory();
+        app = new Application(factory);
+        app.paint();
     }
 }

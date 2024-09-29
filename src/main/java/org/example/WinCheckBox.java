@@ -1,7 +1,7 @@
 package org.example;
 
-public class WinCheckBox {
-    public void render(){
-        System.out.println("Rendering Windows CheckBox");
+public class WinCheckBox implements CheckBox {
+    public void render() {
+        System.out.println("Rendering a Windows Checkbox");
     }
 }

@@ -1,7 +1,7 @@
 package org.example;
 
-public class WinButton {
-    public void render(){
-        System.out.println("Rendering Windows Button");
+public class WinButton implements Button {
+    public void render() {
+        System.out.println("Rendering a Windows Button");
     }
 }
